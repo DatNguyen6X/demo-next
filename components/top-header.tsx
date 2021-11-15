@@ -128,7 +128,6 @@ export const TopHeader = () => {
                                         loading={loading}
                                         onClick={() => {
                                             setAction('authenticate');
-                                            setLoading(true);
                                         }}
                                         disabled={
                                             !form.isFieldsTouched(true) ||
@@ -145,7 +144,6 @@ export const TopHeader = () => {
                                         className={registerButtonClass}
                                         onClick={() => {
                                             setAction('register');
-                                            setLoading(true);
                                         }}
                                         disabled={
                                             !form.isFieldsTouched(true) ||
