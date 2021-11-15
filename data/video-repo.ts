@@ -24,11 +24,11 @@ export async function createVideo(video: Video) {
         video.createdAt = moment.utc().toDate();
     }
     const docs = readVideos();
+
     docs.push(video);
 
     try {
         writeFileSync(videosDbFile, JSON.stringify(docs, null, 2), 'utf8');
-        console.log('Data successfully saved to disk');
     } catch (e) {
         console.log('An error has occurred ', e);
     }
