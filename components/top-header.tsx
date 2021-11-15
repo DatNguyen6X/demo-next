@@ -16,7 +16,7 @@ export const TopHeader = () => {
     const [loginButtonClass, setLoginButtonClass] = useState('');
 
     const router = useRouter();
-    const [user, setUser] = useState(null);
+    const [user, setUser] = useState<any>(null);
     const [authorized, setAuthorized] = useState(false);
 
     useEffect(() => {
@@ -159,12 +159,13 @@ export const TopHeader = () => {
                 }
 
                 {
-                    authorized &&
+                    authorized && user &&
                     <>
+                        <Button type="link">Welcome {user.username}</Button>
                         <Link href="/share">
                             <Button className="share-video" type="primary" htmlType="button">Share Video</Button>
                         </Link>
-                        <Button type="link" onClick={logout}>Logout</Button>
+                        <Button type="link" danger={true} onClick={logout}>Logout</Button>
                     </>
                 }
             </Space>
