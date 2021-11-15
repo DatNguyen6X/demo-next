@@ -1,0 +1,14 @@
+[
+  {
+    "createdAt": "2021-11-15T08:07:06.690Z",
+    "password": "$2a$10$q5fBcX.r5qxo/M94bJXsKeZW/IokXlXEBt/KqNXLehwYYlK3dAf5K",
+    "username": "test@gmail.com",
+    "id": "6192152acac86a7175479d90"
+  },
+  {
+    "createdAt": "2021-11-15T08:18:03.100Z",
+    "password": "$2a$10$QrzG.c3100uXXycErn69susq0q/htW1conPiYgMdflWAVIqVA..7i",
+    "username": "test+1@gmail.com",
+    "id": "619217bb1f303b7f0d74f745"
+  }
+]
