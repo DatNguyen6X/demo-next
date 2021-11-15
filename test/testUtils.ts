@@ -3,6 +3,7 @@ import {render} from '@testing-library/react'
 // import { TranslationProvider } from "my-i18n-lib"
 // import defaultStrings from "i18n/en-x-default"
 
+// @ts-ignore
 const Providers = ({children}) => {
     return children
     // return (
@@ -14,6 +15,7 @@ const Providers = ({children}) => {
     // )
 }
 
+// @ts-ignore
 const customRender = (ui, options = {}) =>
     render(ui, {wrapper: Providers, ...options})
 

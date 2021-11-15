@@ -9,5 +9,6 @@ module.exports = {
         ? '/api' // development api
         : '/api', // production api
     youtubeDataApiKey: 'AIzaSyD5YMssBbequ-HiMswvlYmV5qb6dcHNNFI'
-  }
+  },
+  excludeFile: (str) => /\*.{spec,test}.{js,ts}/.test(str)
 }
